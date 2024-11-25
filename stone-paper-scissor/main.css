@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #89c15e;
+  font-family: "Roboto";
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+}
+/* Main Display Styling */
+.main-display {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  padding: 0.8rem;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+  justify-content: space-between;
+  border-radius: 0.5rem;
+  font-size: 2rem;
+}
+
+.score-board {
+  gap: 1rem;
+}
+
+.scores {
+  background-color: #ffffff;
+  color: #656565;
+  text-align: center;
+  border-radius: 0.5rem;
+  width: 6rem;
+  padding: 0.5rem;
+  font-size: 1rem !important;
+}
+
+.comp-curr-score,
+.user-curr-score {
+  font-weight: bold;
+  color: black;
+  font-size: 3rem !important;
+}
+
+/* Weapons Styling */
+.weapons {
+  margin-top: 5rem;
+  width: 50%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.weapon {
+  text-align: center;
+  justify-content: center;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: relative;
+  cursor: pointer;
+}
+
+.weapon > i {
+  position: absolute;
+  top: 1.3rem;
+}
+
+.info {
+  width: 10rem;
+  text-align: center;
+}
+
+.who-wins {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 1.8px;
+}
+
+.no-clicks {
+  pointer-events: none;
+}
+
+.weapon-picked {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.weapon-picked span {
+  color: #ffffff;
+  font-size: small;
+  letter-spacing: 1px;
+}
+
+.hidden {
+  display: none;
+}
+
+.rules {
+  font-size: 90%;
+  color: white;
+  background-color: #45a049;
+  list-style-type: square;
+  border: solid 5px white;
+  border-radius: 3%;
+  padding: 15px;
+  padding-left: 25px;
+  text-align: left;
+  position: relative;
+  width: 18%;
+  margin-left: auto;
+  right: 40px;
+  top: -100px;
+}
+
+.rules > h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.rules-button {
+  padding: 10px 20px; /* Space inside the button */
+  background-color: #89c15e; /* Button color */
+  color: white; /* Text color */
+  border: solid 3px white; /* Remove default border */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Text size */
+  cursor: pointer; /* Pointer cursor on hover */
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+.cancel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  font-size: larger;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: white;
+  background-color: red;
+  border: 3px solid white;
+  position: absolute;
+  right: -15px;
+  top: -15px;
+  cursor: pointer;
+}
+
+.list-item li {
+  margin-bottom: 10px;
+}
+
+.play-btn {
+  padding: 0.7rem;
+  color: #656565;
+  border-radius: 0.3rem;
+  background-color: #ffffff;
+  text-align: center;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-size: small;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.weapon-stone {
+  border: 0.6rem solid #0074b6;
+}
+.weapon-paper {
+  border: 0.6rem solid #ffa943;
+}
+.weapon-scissors {
+  border: 0.6rem solid #bd00ff;
+}

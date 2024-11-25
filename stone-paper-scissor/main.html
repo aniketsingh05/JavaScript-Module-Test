@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stone Paper Scissors</title>
+    <link rel="stylesheet" href="./main.css" />
+    <!-- Font Awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row main-display">
+        <div class="title">
+          ROCK <br />
+          PAPER <br />
+          SCISSORS
+        </div>
+        <div class="row score-board">
+          <div class="scores">
+            Computer <br />
+            score
+            <div class="comp-curr-score">0</div>
+          </div>
+          <div class="scores">
+            Your <br />
+            Score
+            <div class="user-curr-score">0</div>
+          </div>
+        </div>
+      </div>
+      <div class="weapons row">
+        <div class="row weapon weapon-stone">
+          <i class="fa-solid fa-hand-back-fist fa-3x"></i>
+        </div>
+        <div class="row weapon weapon-paper">
+          <i class="fa-solid fa-hand fa-3x"></i>
+        </div>
+        <div class="row weapon weapon-scissors">
+          <i class="fa-solid fa-hand-scissors fa-3x"></i>
+        </div>
+      </div>
+
+      <!-- After selecting the weapon -->
+      <div
+        class="weapons row weapons-after-select hidden"
+        style="align-items: center; justify-content: center; gap: 2rem"
+      >
+        <div class="row weapon-picked no-clicks">
+          <span>YOU PICKED</span>
+          <div class="row weapon user-picked">
+            <i class="fa-solid fa-3x"></i>
+          </div>
+        </div>
+
+        <div class="info">
+          <div class="who-wins">You win</div>
+          <div class="play-btn play-next-chance-btn">play</div>
+          <div class="play-btn play-restart-btn hidden">restart</div>
+        </div>
+        <div class="row weapon-picked no-clicks">
+          <span>PC PICKED</span>
+          <div class="row weapon no-clicks computer-picked">
+            <i class="fa-solid fa-3x"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rules-block">
+      <div class="rules hidden">
+        <div class="cancel">X</div>
+        <h2>Game Rules</h2>
+        <ul class="list-item">
+          <li>
+            Rock beats scissors, scissors beats paper, and paper beats rock.
+          </li>
+          <li>
+            Agree ahead of time whether you will count off "rock,paper,scissor
+            ,shoot" or just "rock,paper,scissor".
+          </li>
+          <li>
+            use rock,paper,scissor to settle for minor decision or simply play
+            to pass the time.
+          </li>
+          <li>
+            If both player lay down the same hand, each player play down other
+            hand.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <button class="rules-button">Rules</button>
+    <script src="./main.js"></script>
+    <script src="./GameSimulation.js"></script>
+  </body>
+</html>

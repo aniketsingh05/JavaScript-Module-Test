@@ -1,0 +1,14 @@
+body background color: #89c15e
+Rules background color: #004429
+fist border color: #0074b6
+scissor border color: #bd00ff
+hand border color: #ffa943
+
+winning triple border layer
+innermost layer: #ffa943
+middle layer: #ffa943
+outermost layer: #66b248
+
+white background color: #ffffff
+
+red cross color: #ff0000
